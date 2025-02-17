@@ -18,7 +18,6 @@ void	print_bits(unsigned char octet)
 
 // int	main(void)
 // {
-// 	unsigned char octet = '2';
-// 	print_bits(octet);
+// 	print_bits(2);
 // 	return (0);
 // }

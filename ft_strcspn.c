@@ -2,7 +2,6 @@
 
 size_t ft_strcspn(const char *s, const char *reject)
 {
-
 	size_t i;
 	size_t j;
 
@@ -25,9 +24,10 @@ size_t ft_strcspn(const char *s, const char *reject)
 
 int main (void)
 {
-	char s[] = "1234";
-	char reject[] = "1234";
+	char s[] = "a";
+	char reject[] = "b";
 
-	printf("%zu\n", ft_strcspn(s, reject));
-	printf("%zu\n", strcspn(s, reject));
+	printf("Moi: %zu\n", ft_strcspn(s, reject));
+	printf("Man: %zu\n", strcspn(s, reject));
+	return (0);
 }

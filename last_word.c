@@ -27,10 +27,8 @@ int main(int ac, char **av)
 	while (av[1][len] &&(av[1][len] == ' ' || av[1][len] == '\t'))
 		len--;
 	i = len;
-	printf("len = %d\n", len);
 	while (len > 0 && (av[1][len - 1] != ' ' && av[1][len - 1] != '\t'))
 		len--;
-	printf("len = %d\n", len);
 	while (av[1][len] && len <= i)
 	{
 		write(1, &av[1][len], 1);
